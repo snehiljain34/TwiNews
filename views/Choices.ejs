@@ -1,0 +1,151 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+
+<head>
+    <title>Authentic Tweets Recommendation System</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="FreeLink is a free tool to create your own mini website for your audience with a click of a button.">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="FreeLink">
+    <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#fff">
+    <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content="FreeLink">
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="FreeLink">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content="FreeLink | One link for everything">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link data-n-head="ssr" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600;700&amp;display=swap">
+    <link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.edd5e990.json">
+    <link data-n-head="ssr" rel="shortcut icon" href="/_nuxt/icons/icon_64.fabb74.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" href="/_nuxt/icons/icon_512.fabb74.png" sizes="512x512">
+    <link rel="preload" href="/_nuxt/ae84369d9e2505e72c9f.js" as="script">
+    <link rel="preload" href="/_nuxt/57373ce856e6c4873c2c.js" as="script">
+    <link rel="preload" href="/_nuxt/378d774f32ace0561bf9.js" as="script">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div>
+                <div class="main">
+                    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+                        <a href="#" class="navbar-brandy"><img src="/assets/twinews.png" alt="capstone2022" width="150px"></a>
+                        <nav class="my-2 my-md-0 mr-md-4 ml-auto">
+                            <a href="#services" class="p-2 text-dark">Features</a>
+                            <a href="#contact" class="p-2 text-dark">Contact us</a>
+                            <a href="#about" class="p-2 text-dark">About us</a>
+                            <a href class="p-2 text-dark">
+                                <a href="" style="color:black;" class="btn btn-primary-soft">
+                                    <%= username %>
+                                </a>
+                            </a>
+                        </nav>
+
+                    </div>
+                    <div class="page-body-wrapper">
+                        <section id="home" class="home" style="padding-top: 0px;">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="biotree_illustration"><img alt src="/assets/addnewlink.svg"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 order-last">
+                                        <div class="textparthome">
+                                            <h1 class="homeheading" style="font-family: inherit; font-weight: 100; font-size: 1.5rem; padding-top: 10px;">
+                                                Hey
+                                                <%= username %>! please choose 3 topics.
+                                            </h1>
+
+                                            <form class='homepara' action="/LoggedIN" method="POST">
+
+
+                                                <div class="material-textfield">
+                                                    <input type="checkbox" id="category1" name="category1" value="yes">
+                                                    <label for="category1"> <a class="btn btn-primary-soft"> Buissness</a></label><br>
+                                                </div>
+                                                <div class="material-textfield">
+                                                    <input type="checkbox" id="category2" name="category2" value="yes">
+                                                    <label for="category2"> <a class="btn btn-primary-soft"> Entertainment</a></label><br>
+                                                </div>
+                                                <div class="material-textfield">
+                                                    <input type="checkbox" id="category3" name="category3" value="yes">
+                                                    <label for="category3"> <a class="btn btn-primary-soft"> Health</a></label><br>
+                                                </div>
+                                                <div class="material-textfield">
+                                                    <input type="checkbox" id="category5" name="category4" value="yes">
+                                                    <label for="category5"> <a class="btn btn-primary-soft"> Politics</a></label><br>
+                                                </div>
+                                                <div class="material-textfield">
+                                                    <input type="checkbox" id="category4" name="category5" value="yes">
+                                                    <label for="category4"> <a class="btn btn-primary-soft"> Sports</a></label><br>
+                                                </div>
+                                                <div class="material-textfield">
+                                                    <input type="checkbox" id="category6" name="category6" value="yes">
+                                                    <label for="category6"> <a class="btn btn-primary-soft"> Technology</a></label><br>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Register</button>
+
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div id="contact" class="wrapper" data-v-6cdbe30a>
+                            <div class="textpartcontact" data-v-6cdbe30a>
+                                <h1 data-v-6cdbe30a>Contact us</h1>
+                            </div>
+                            <div class="like-form-raised" data-v-6cdbe30a>
+                                <div class="row" data-v-6cdbe30a>
+                                    <div class="leftsidecontact" data-v-6cdbe30a><img src="assets/contact.png" data-v-6cdbe30a></div>
+                                    <div class="rightsidecontact" data-v-6cdbe30a>
+                                        <form data-v-6cdbe30a method="POST" action="mailto:snehil.udrhj@gmail.com" enctype=”multipart/form-data”>
+                                            <div class="material-textfield" data-v-6cdbe30a><input placeholder=" " type="text" value="" data-v-6cdbe30a> <label data-v-6cdbe30a>Email address</label></div>
+                                            <div class="material-textfield" data-v-6cdbe30a><textarea placeholder data-v-6cdbe30a></textarea> <label data-v-6cdbe30a>Drop us a message</label></div>
+                                            <button type="submit" class="btn main-btn" data-v-6cdbe30a>SUBMIT <i aria-hidden="true" class="fa fa-arrow-right" style="margin-left: 5px;" data-v-6cdbe30a></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+
+                        <div data-v-19839189="" class="footer" style="padding-top: 10px;padding-bottom: 10px;">
+                            <span class="credits">Capstone Project 2022</span>
+                            </span>
+                        </div>
+
+
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.__NUXT__ = {
+            layout: "default",
+            data: [{}],
+            fetch: [],
+            error: null,
+            serverRendered: true,
+            routePath: "\u002F"
+        };
+    </script>
+    <script src="/_nuxt/ae84369d9e2505e72c9f.js" defer></script>
+    <script src="/_nuxt/378d774f32ace0561bf9.js" defer></script>
+    <script src="/_nuxt/57373ce856e6c4873c2c.js" defer></script>
+</body>
+
+</html>

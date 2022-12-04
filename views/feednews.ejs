@@ -1,0 +1,137 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+
+<head>
+    <title>Admin | </title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description" content=" FreeLink is a free tool to create your own mini website for your audience with a click of a button.">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content=" FreeLink">
+    <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#fff">
+    <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content=" FreeLink">
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content=" FreeLink">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content=" FreeLink | One link for everything">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link data-n-head="ssr" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.edd5e990.json">
+    <link data-n-head="ssr" rel="shortcut icon" href="/_nuxt/icons/icon_64.fabb74.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" href="/_nuxt/icons/icon_512.fabb74.png" sizes="512x512">
+    <link rel="preload" href="/_nuxt/053298106fe2e80652b7.js" as="script">
+    <link rel="preload" href="/_nuxt/8e7c9371d2ba7c0521ea.js" as="script">
+    <link rel="preload" href="/_nuxt/0ae944b4ab38a9695616.js" as="script">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="stylesheet" href="styles/newlink.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="styles/feed.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Categories</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/LoggedIN/news">Feed</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/LoggedIN/news/business">Business</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/LoggedIN/news/entertainment">Entertainment</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/LoggedIN/news/health">Health</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/LoggedIN/news/politics">Politics</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/LoggedIN/news/sports">Sports</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/LoggedIN/news/technology">Technology</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <a href="/LoggedIN" class="navbar-brandy" style="left: 76rem;position: fixed;">
+                        <img src="/assets/twinews.png" alt="capstone2022" width="150px">
+                    </a>
+                    <button class="btn btn-primary" id="sidebarToggle">Choose Category</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item active" style="width: max-content">
+                                <a class="nav-link" href="/">
+                                    <%= date %>
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Action</a>
+                                    <a class="dropdown-item" href="#!">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" style="margin-top: -8px;">
+                                <form action="/logout?_method=DELETE" method="POST">
+                                    <div>
+                                        <button type="submit" style="padding: 3px 15px;">logout</button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+                <% Posts.forEach(function(post){ %>
+                    <article class="postcard dark blue">
+                        <div class="postcard__text" style="padding: 0rem;">
+
+                            <div class="postcard__bar">
+                                <h1 class="postcard__title blue" style="font-size: 2rem;">#
+                                    <%= post.headline %>
+                                </h1>
+                            </div>
+
+
+                        </div>
+                    </article>
+
+                    <% TweetArray = post.tweets %>
+                        <% TweetArray.forEach(function(hey){ %>
+                            <article class="postcard dark blue">
+                                <div class="postcard__text" style="padding: 0rem;">
+                                    <div class="postcard__subtitle small">
+                                        <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i><%= date %>
+                            </time>
+                                    </div>
+                                    <div class="postcard__bar"></div>
+                                    <div class="postcard__preview-txt">
+                                        <%= hey %>
+                                    </div>
+                                    <ul class="postcard__tagbox" style="margin-bottom: 0rem;">
+                                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>2min read</li>
+
+                                    </ul>
+                                </div>
+                            </article>
+                            <%  }) %>
+                                <%  }) %>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

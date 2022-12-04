@@ -1,0 +1,115 @@
+.mainwrp{
+  margin-top: 0px!important;
+
+}
+
+
+.signup-left {
+
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 15px
+	font-weight: 400;
+	text-align: left;
+	background-color: #fff;
+	display: flex;
+  float: left;
+  margin-left: 120px;
+}
+
+h1 {
+	/* Font & Text */
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 50px;
+	font-weight: 700;
+	text-align: left;
+	color: #6c7293;
+}
+div #login {
+	/* Font & Text */
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 14.992px;
+	font-weight: 400;
+  background-color: #fff;
+	color: rgb(108, 114, 147);
+}
+input {
+	/* Font & Text */
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #f7f7f9;
+	color: #808080;
+
+	padding: 16px 11.2px;
+  margin-bottom: 20px;
+  width: 360px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+textarea {
+	/* Font & Text */
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #f7f7f9;
+	color: #808080;
+  padding: 16px 11.2px;
+  margin-bottom: 20px;
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.signupimg{
+  width: 480px;;
+  height: 20rem;
+}
+.navbra{
+	width: 80%;
+	margin: 0 auto 1rem;
+  background-color: #fff;
+}
+@media (max-width: 510px;){
+  .mainwrp{
+    margin-top: 0px!important;
+    margin-left: 20px;
+  }
+}
+
+.footer{
+    background: #fbfbff;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    margin-top: 2rem!important;
+    width: 100%!important;
+	text-align: center!important;
+	padding: 1rem!important;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	color: #000;
+}
+{
+-webkit-text-size-adjust: 100%;
+color: #222;
+font-size: 1em;
+line-height: 1.4;
+box-sizing: inherit;
+font-family: 'Roboto',sans-serif;
+font-weight: 300;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+position: relative;
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 3px;
+margin-bottom: 20px;
+padding: 8px 16px 8px 8px;
+height: 284px;
+width: 900px;
+z-index: 1;
+}

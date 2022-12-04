@@ -1,0 +1,486 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+
+<head>
+    <title>Admin | </title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description" content=" FreeLink is a free tool to create your own mini website for your audience with a click of a button.">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content=" FreeLink">
+    <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#fff">
+    <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content=" FreeLink">
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content=" FreeLink">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content=" FreeLink | One link for everything">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link data-n-head="ssr" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.edd5e990.json">
+    <link data-n-head="ssr" rel="shortcut icon" href="/_nuxt/icons/icon_64.fabb74.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" href="/_nuxt/icons/icon_512.fabb74.png" sizes="512x512">
+    <link rel="preload" href="/_nuxt/053298106fe2e80652b7.js" as="script">
+    <link rel="preload" href="/_nuxt/8e7c9371d2ba7c0521ea.js" as="script">
+    <link rel="preload" href="/_nuxt/0ae944b4ab38a9695616.js" as="script">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="stylesheet" href="styles/newlink.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div>
+                <div class="mainwrp" data-v-19839189>
+                    <div class="container" data-v-19839189>
+                        <div class="navbra" style="margin-bottom:2rem;" data-v-19839189>
+                            <div class="brandlogo" style="margin-top: 1rem; margin-left: 1rem;" data-v-19839189>
+                                <img src="/assets/FreeLink1.sv" width="150px" data-v-19839189>
+                            </div>
+                        </div>
+                        <div class="col" data-v-19839189>
+                            <div class="header" data-v-19839189>
+                                <div class="row" data-v-19839189>
+                                    <div class="col-12 col-md-3" data-v-19839189>
+                                        <div align="middle" class="img-profile" data-v-19839189>
+                                            <img src="https://imgur.com/PNMyyiQ.png" alt="profile" data-v-19839189>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6" data-v-19839189>
+                                        <div class="col-12 nospace" data-v-19839189>
+                                            <h1 class="mb-3" data-v-19839189>
+                                                <%= username %>
+                                            </h1>
+                                            <h2 class="mb-3" data-v-19839189>
+                                                <%= bio      %>
+                                            </h2>
+                                            <div class="row" data-v-19839189>
+                                                <div id="drag1" class="snackbar yell animate__animated animate__backInDown" data-v-19839189 data-v-19839189>
+                                                    <div class="bottom-center" data-v-19839189>
+                                                        Hey! You can drag &amp; arrange your links
+                                                    </div>
+                                                    <i id="drag" class="far fa-times-circle" data-v-19839189></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 wid100mob" data-v-19839189>
+                                        <div id="preview" class="edit-btn" style="margin-bottom:1rem;color:#9673FF;background:#EAE3FF;" data-v-19839189>
+                                            <i class="fas fa-eye" data-v-19839189></i> See preview
+                                        </div>
+                                        <div class="edit-btn" style="margin-bottom:1rem;color: rgb(37, 185, 62);background-color: rgb(206, 253, 215);" data-v-19839189>
+                                            <i class="fas fa-pen" data-v-19839189></i> Edit profile
+                                        </div>
+                                        <form action="/logout?_method=DELETE" method="POST">
+                                            <div id="logout" class="edit-btn" style="padding: 0px" data-v-19839189>
+                                                <button type="submit" style="margin-top: 0px; padding: 12px;">Log out</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nosocial" data-v-19839189>
+                                <div class="header" data-v-19839189>
+                                    <div class="top" data-v-19839189>
+                                        <h2 class="linktext" data-v-19839189>Social links:</h2>
+                                        <div class="edit-btn" id="editbtn" style="color: rgb(37, 185, 62);background-color: rgb(206, 253, 215);" data-v-19839189>
+                                            <i class="fas fa-plus" data-v-19839189></i> Add new link
+                                        </div>
+                                    </div>
+                                    <div id="SocialLink" style="margin:0 auto;text-align:center;" data-v-19839189>
+
+                                        <% Posts.forEach(function(post){ %>
+                                            <!-- <% if (post.title == null){ %> -->
+                                            <div data-v-19839189="" class="links" style="margin: 0px auto;">
+                                                <div data-v-19839189="" class="row wid90" style="margin: 0px auto;">
+                                                    <div data-v-19839189="" class="row main-link">
+                                                        <div data-v-19839189="" class="col-12 col-md-6" style="padding-left: 0px; padding-right: 0px;">
+                                                            <h6 data-v-19839189="" class="card-subtitle">
+                                                                <%= post.selection %>
+                                                            </h6>
+                                                            <p data-v-19839189="" class="card-text">
+                                                                <%= post.linkgiven %>
+                                                            </p>
+                                                        </div>
+                                                        <div data-v-19839189="" class="col-12 col-md-6 justify-end items-end">
+                                                            <div data-v-19839189="" class="row justify-end items-end">
+                                                                <div data-v-19839189="" class="btngroup justify-end items-end">
+                                                                    <div data-v-19839189="" data-id="152" class="edit-btn">
+                                                                        <i data-v-19839189="" class="fas fa-edit"></i> Edit Link
+                                                                    </div>
+                                                                    <!---->
+                                                                    <div data-v-19839189="" data-id="152" class="edit-btn">
+                                                                        <i data-v-19839189="" class="fas fa-trash"></i> Delete Link
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <% } %> -->
+
+                                            <%  }) %>
+
+
+                                                <div id="drag3" class="snackbar yell animate__animated animate__fadeIn" data-v-19839189 data-v-19839189>
+                                                    <div class="bottom-center" data-v-19839189>
+                                                        You don't have any links yet. 🔗
+                                                    </div>
+                                                    <i id="drag2" class="far fa-times-circle" data-v-19839189></i>
+                                                </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header" data-v-19839189>
+                                <div class="top" data-v-19839189>
+                                    <h2 class="linktext" data-v-19839189>Your links:</h2>
+                                    <div class="edit-btn" id="newlinkbutton" style="color: rgb(37, 185, 62);background-color: rgb(206, 253, 215);" data-v-19839189>
+                                        <i class="fas fa-plus" data-v-19839189></i> Add new link
+                                    </div>
+                                </div>
+                                <div class="links" style="margin:0 auto;" data-v-19839189>
+                                    <div class="row" id="publishedlinks" data-v-19839189>
+                                        <div data-v-19839189="" class="wid90">
+                                            <span data-v-19839189="">
+                                                <% Posts.forEach(function(post){ %>
+                                                    <% if (post.title != null ){ %>
+                                                        <div data-v-19839189="" class="row main-link flip-list-enter-to">
+                                                            <div data-v-19839189="" class="col-12 col-md-6" style="padding-left: 0px; padding-right: 0px;">
+                                                                <a data-v-19839189="" href="<%= post.linkurl %>" target="_blank">
+                                                                    <h6 data-v-19839189="" class="card-subtitle"><%= post.title  %></h6>
+                                                                    <p data-v-19839189="" class="card-text"><%= post.description %></p>
+                                                                 </a>
+                                                            </div> 
+                                                        </div>
+                                                    <% } else{ %>
+                                                          
+                      
+                                                    <% } %>
+                                           <% }) %>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer" data-v-19839189>
+                            <span class="credits">Capstone Project 2022</span>
+                    </div> <!----> <!----> <!----> <!----> <!---->
+
+                    <form method="POST" action="/LoggedIN/admin/<%= username %>">
+
+                        <div data-v-19839189="" class="newsociallinkmodal" id="newsociallinkmodal">
+                            <div data-v-19839189="" class="top">
+                                <h2 data-v-19839189="" class="linktext">Add new social link</h2> 
+                                <div data-v-19839189="" class="edit-btn" id="closebtn" style="color: rgb(37, 185, 62); background-color: rgb(206, 253, 215);">
+                                    <i data-v-19839189="" class="far fa-times-circle"></i>
+                                        Close
+                                </div>
+                            </div> 
+                            <div data-v-19839189="" class="row wid100">
+                                <div data-v-19839189="" class="col-md-5">
+
+                                        <span data-v-19839189="" style="float: left; color: grey; margin-bottom: 10px;">Choose social media:</span>
+                            <div data-v-1h9839189="" class="box">
+                                <select id="linkselection" data-v-19839189="" name="selection">
+                                                <option data-v-19839189="" value="Instagram">Instagram</option> 
+                                                <option data-v-19839189="" value="Twitter">Twitter</option> 
+                                                <option data-v-19839189="" value="YouTube">YouTube</option> 
+                                                <option data-v-19839189="" value="LinkedIn">LinkedIn</option> 
+                                                <option data-v-19839189="" value="Github">Github</option>
+                                            </select>
+                            </div>
+
+                            <div data-v-19839189="" class="material-textfield">
+                                <input id="sociallinks" data-v-19839189="" name="linkgiven" placeholder="Enter a link(URL)" type="url" required="required" style="background-color: rgb(247, 247, 249);">
+                            </div>
+                            <button data-v-19839189="" id="AddLink" class="main-btn black">
+                                                ADD LINK
+                                            <i data-v-19839189="" aria-hidden="true" class="fa fa-arrow-right" style="margin-left: 8px;"></i>
+                                            </button>
+                            <!---->
+
+                        </div>
+                        <div data-v-19839189="" class="col-md-5">
+                            <img data-v-19839189="" src="/assets/socialmedia.svg" class="newlinkimg">
+                        </div>
+                    </div>
+                </div>
+                </form>
+
+                <div id="hurray" data-v-19839189="" class="snackbar success">
+                    <div data-v-19839189="" class="bottom-center">
+                        Hurray! Link added successfully.
+                        <i id="closeHurray" data-v-19839189="" class="far fa-times-circle"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div id="newlinkdiv" data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div data-v-8fd805be>
+                <div class="mainwr" data-v-22e812c5 data-v-8fd805be>
+                    <div class="navbra" data-v-22e812c5>
+                        <div class="brandlogo" style="margin-top: 1rem; margin-left: 0;" data-v-22e812c5>
+                            <img src="/assets/FreeLink2.svg" width="200px" data-v-22e812c5>
+                        </div>
+                    </div>
+                    <div id="newlink" data-v-22e812c5>
+                        <div class="newlink-left" data-v-22e812c5>
+                            <div class="formpart" data-v-22e812c5>
+                                <div id="linkform" data-v-1b1977d0 data-v-22e812c5>
+                                    <div class="rowh" id="closenewlink" data-v-1b1977d0>
+                                        <h1 data-v-1b1977d0>ADD NEW LINK</h1>
+                                        <button type="submit" class="main-btn green" data-v-1b1977d0>
+                                                    <i aria-hidden="true" class="fa fa-arrow-left" style="margin-right: 6px;" data-v-1b1977d0></i>
+                                                    GO BACK
+                                                </button>
+                                    </div>
+                                    <!---->
+                                    <form data-v-1b1977d0 method="POST" action="/LoggedIN/admin/<%= username%>">
+                                        <div class="material-textfield" data-v-1b1977d0>
+                                            <input name="title" placeholder="Title" type="text" required="required" value="" data-v-1b1977d0>
+                                        </div>
+                                        <div class="material-textfield" data-v-1b1977d0>
+                                            <textarea name="description" placeholder="Description" required="required" data-v-1b1977d0></textarea>
+                                        </div>
+                                        <div class="material-textfield" data-v-1b1977d0>
+                                            <input name="linkurl" placeholder="Enter a link(URL)" type="url" required="required" value="" data-v-1b1977d0>
+                                        </div>
+                                        <button id="publish" type="submit" class="main-btn black" data-v-1b1977d0>
+                                                 PUBLISH LINK
+                                                </button>
+                                        <!---->
+                                    </form>
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newlink-right" data-v-22e812c5>
+                            <img src="/assets/giphy.gif" class="newlinkimg" data-v-22e812c5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.__NUXT__ = {
+            layout: "default",
+            data: [{}],
+            fetch: [],
+            error: null,
+            serverRendered: true,
+            routePath: "\u002Fnewlink\u002F"
+        };
+    </script>
+    <script src="/_nuxt/053298106fe2e80652b7.js" defer></script>
+    <script src="/_nuxt/30c2468e8a0af06ed19c.js" defer></script>
+    <script src="/_nuxt/8e7c9371d2ba7c0521ea.js" defer></script>
+
+    <script type="text/javascript">
+        $("#newlinkbutton").click(function() {
+            $("#newlinkdiv").css({
+                "display": "block"
+            });
+            $("#__nuxt").css({
+                "display": "none"
+            });
+        });
+        $("#closenewlink").click(function() {
+            $("#newlinkdiv").css({
+                "display": "none"
+            });
+        });
+        $("#close").click(function() {
+            $("#newsociallinkmodal").css({
+                "display": "none"
+            });
+        });
+
+        $("#editbtn").click(function() {
+            $("#newsociallinkmodal").css({
+                "display": "block"
+            });
+        });
+
+        $("#closebtn").click(function() {
+            $("#newsociallinkmodal").css({
+                "display": "none"
+            });
+        });
+
+
+        $("#newlink").click(function() {
+            $("#newlink").css({
+                "display": "block"
+            });
+        });
+
+        $("#preview").click(function() {
+            window.location.replace("/freelink/<%= username %>");
+        });
+
+        $("#drag").click(function() {
+            $("#drag1").attr("class", "snackbar yell animate__animated animate__fadeOutDown");
+        });
+        $("#drag2").click(function() {
+            $("#drag3").attr("class", "snackbar yell animate__animated animate__fadeOutDown");
+        });
+
+        $("#AddLink").click(function() {
+            var link = document.getElementById("sociallinks").value;
+            var selection = document.getElementById("linkselection").value;
+
+            var DivElement = document.createElement("Div");
+
+            DivElement.className = "row wid90";
+            DivElement.style.margin = "0px auto";
+            DivElement.setAttribute("data-v-19839189", "");
+
+            var DivElement1 = document.createElement("Div");
+            DivElement1.className = "row main-link";
+            DivElement1.style.textAlign = "left";
+            DivElement1.setAttribute("data-v-19839189", "");
+
+
+            var DivElement2 = document.createElement("Div");
+            DivElement2.className = "col-12 col-md-6";
+            DivElement2.style.paddingLeft = "0px";
+            DivElement2.style.paddingRight = "0px";
+            DivElement2.setAttribute("data-v-19839189", "");
+
+            var h6 = document.createElement("H6");
+            h6.className = "card-subtitle";
+            h6.setAttribute("data-v-19839189", "");
+            var t = document.createTextNode(selection);
+            h6.appendChild(t);
+            DivElement2.appendChild(h6);
+
+            var p = document.createElement("P");
+            p.className = "card-text";
+            p.setAttribute("data-v-19839189", "");
+            var t1 = document.createTextNode(link);
+            p.appendChild(t1);
+            DivElement2.appendChild(p);
+
+
+            DivElement1.appendChild(DivElement2);
+            DivElement.appendChild(DivElement1);
+
+            document.getElementById("SocialLink").appendChild(DivElement);
+
+            $("#newsociallinkmodal").css({
+                "display": "none"
+            });
+            $("#hurray").css({
+                "display": "block"
+            });
+            $("#hurary").attr("class", "snackbar success animate__animated animate__tada");
+            $("#drag3").attr("class", "snackbar yell animate__animated animate__fadeOutDown");
+        });
+
+        $("#publish").click(function() {
+            var title = document.getElementsByName("title")[0].value;
+            var description = document.getElementsByName("description")[0].value;
+            var linkurl = document.getElementsByName("linkurl")[0].value;
+
+            // <div data-v-19839189="" class="wid90">
+            //     <span data-v-19839189="">
+            //         <div data-v-19839189="" class="row main-link">
+            //             <div data-v-19839189="" class="col-12 col-md-6" style="padding-left: 0px; padding-right: 0px;">
+            //                 <a data-v-19839189="" href="https://hey.com" target="_blank">
+            //                     <h6 data-v-19839189="" class="card-subtitle">Hey</h6>
+            //                     <p data-v-19839189="" class="card-text">this is newlink</p>
+            //                 </a>
+            //             </div>
+
+            //             <!---->
+            //         </div>
+
+            //     </span>
+            //     </div>
+
+            var DivElement = document.createElement("Div");
+            DivElement.className = "row wid90";
+            DivElement.style.margin = "0px auto";
+            DivElement.setAttribute("data-v-19839189", "");
+
+            var span = document.createElement("SPAN");
+            span.setAttribute("data-v-19839189", "");
+
+            var DivElement1 = document.createElement("Div");
+            DivElement1.className = "row main-link";
+            DivElement1.style.textAlign = "left";
+            DivElement1.setAttribute("data-v-19839189", "");
+
+
+            var DivElement2 = document.createElement("Div");
+            DivElement2.className = "col-12 col-md-6";
+            DivElement2.style.paddingLeft = "0px";
+            DivElement2.style.paddingRight = "0px";
+            DivElement2.setAttribute("data-v-19839189", "");
+
+            var a = document.createElement("A");
+            a.setAttribute("data-v-19839189", "");
+            a.setAttribute("href", "linkurl");
+            a.setAttribute("target", "_blank");
+
+            var h6 = document.createElement("H6");
+            h6.className = "card-subtitle";
+            h6.setAttribute("data-v-19839189", "");
+            var t = document.createTextNode(title);
+            h6.appendChild(t);
+            a.appendChild(h6);
+
+            var p = document.createElement("P");
+            p.className = "card-text";
+            p.setAttribute("data-v-19839189", "");
+            var t1 = document.createTextNode(description);
+            p.appendChild(t1);
+            a.appendChild(p);
+
+
+            DivElement2.appendChild(a);
+            DivElement1.appendChild(DivElement2);
+            DivElement.appendChild(DivElement1);
+
+            document.getElementById("publishedlinks").appendChild(DivElement);
+
+
+            $("#newlinkdiv").css({
+                "display": "none"
+            });
+            $("#__nuxt").css({
+                "display": "block"
+            });
+            $("#hurray").css({
+                "display": "block"
+            });
+            $("#hurary").attr("class", "snackbar success animate__animated animate__tada");
+        })
+        $("#closeHurray").click(function() {
+            $("#hurray").attr("class", "snackbar success animate__animated animate__fadeOutDown");
+        });
+    </script>
+</body>
+
+</html>
